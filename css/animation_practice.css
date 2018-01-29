@@ -1,0 +1,102 @@
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 270px;
+	height: 300px;
+	position: relative;
+	margin-left:-150px;
+	margin-top: 160px;
+	left: 50%;
+}
+
+.mono {
+	font-family: 'Anton', sans-serif;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}/* this is where all of your CSS styles go */
+
+
+@keyframes i_fade{
+	0% {transform: rotate(0deg); color: teal;}
+	100%{transform:rotate(-360deg); color: lightgrey;}
+} /* 0% - start of animation, 100% - end of animation */
+
+
+#l{
+	color: teal;
+	position:relative;
+	animation: l_move 2s;
+	animation-delay:1s;
+}
+
+@keyframes s_move{
+	0% {top: 0px; left:0px; color: teal;}
+	100% {top: 0px; left:-75px; color: lightgrey;}
+}
+
+#i {
+	color: teal;
+	opacity:100;
+	animation: i_fade 2s;
+	animation-delay: 1s; /* animation ends (stays) at 100% */
+}
+
+@keyframes l_move{
+	0% {top: 0px; left:0px; color: teal;}
+	50% {top: -150px; left:35px;}
+	100% {top: 0px; left:70px; color: lightgrey;}
+	/*100% {top:0px;}*/
+}
+
+#s{
+	color: teal;
+	position:relative;
+	animation: s_move 2s;
+	animation-delay:1s;
+}
+
+@keyframes t_move{
+	0% {top: 0px; left:0px; color:teal;}
+	50% {top: 150px; left:45px;}
+	100% {top: 0px; left:90px; color: lightgrey;}
+	/*100% {top:0px;}*/
+}
+
+#t{
+	color: teal;
+	position:relative;
+	animation: t_move 2s;
+	animation-delay:1s;
+}
+
+@keyframes e_move{
+	0% {top: 0px; left:0px; color:teal;}
+	50% {top:300px;}
+	100% {top: 0px; left:-50px; color:lightgrey;}
+}
+
+#e{
+	color: teal;
+	position:relative;
+	animation: e_move 2s;
+	animation-delay:1s;
+}
+
+@keyframes n_move{
+	0% {transform: rotate(0deg); top: 0px; left:0px; color: teal;}
+	100%{transform:rotate(-360deg); top: 0px; left: -50px; color:lightgrey;}
+}
+
+#n{
+	color: teal;
+	position: relative;
+	opacity:100;
+	animation: n_move 2s;
+	animation-delay: 1s; /* animation ends (stays) at 100% */
+
+}
